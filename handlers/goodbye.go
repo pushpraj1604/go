@@ -13,6 +13,6 @@ func NewGoodbye(l *log.Logger) *Goodbye {
 	return &Goodbye{l}
 }
 
-func (g *Goodbye) ServHTTP(rw http.ResponseWriter, r *http.request) {
+func (g *Goodbye) ServHTTP(rw http.ResponseWriter, r *http.Request) {
 	rw.Write([]byte("byee"))
 }
